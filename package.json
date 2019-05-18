@@ -1,12 +1,25 @@
 {
   "name": "radarr-ombi-sync",
   "version": "1.0.0",
-  "description": "",
+  "description": "Remove available movies from your Radarr watch list.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.js"
+    "start": "nodemon src/index.js",
+    "build": "sh scripts/build.sh"
   },
-  "keywords": [],
+  "keywords": [
+    "radarr",
+    "ombi",
+    "sync",
+    "api"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mariotacke/radarr-ombi-sync.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mariotacke/radarr-ombi-sync/issues"
+  },
   "author": "Mario Tacke <tacke.mario@gmail.com>",
   "license": "MIT",
   "devDependencies": {

@@ -1,0 +1,8 @@
+.git/
+node_modules/
+.dockerignore
+.editorconfig
+.env*
+.gitignore
+Dockerfile
+nodemon.json
