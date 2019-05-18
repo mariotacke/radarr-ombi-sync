@@ -1,0 +1,19 @@
+{
+  "name": "radarr-ombi-sync",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "Mario Tacke <tacke.mario@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "dotenv": "^8.0.0"
+  }
+}
