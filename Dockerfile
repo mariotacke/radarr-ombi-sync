@@ -1,4 +1,4 @@
-FROM node:10-alpine
+FROM node:14-alpine
 LABEL maintainer="Mario Tacke <tacke.mario@gmail.com>"
 ARG COMMIT=""
 LABEL commit=${COMMIT}

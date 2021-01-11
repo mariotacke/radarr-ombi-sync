@@ -16,7 +16,7 @@ async function removeAvailableMoviesFromRadarr () {
     if (ombiMovie && ombiMovie.available) {
       console.log(`Found '${ombiMovie.title}' available. Removing from Radarr.`);
       await radarr.removeMovie(radarrMovieId);
-      console.log(`Removed '${ombiMovie.title}' from Radarr`);
+      console.log(`Removed '${ombiMovie.title}' (${radarrMovieId}) from Radarr`);
     }
   }
 

@@ -17,9 +17,9 @@ async function getMovies () {
 }
 
 async function removeMovie (movieId) {
-  const { data } = await client.delete(`/api/movie/${movieId}?deleteFiles=false&addExclusion=false`);
+  const response = await client.delete(`/api/v3/movie/${movieId}?deleteFiles=false&addImportExclusion=false`);
 
-  return data;
+  return response.data;
 }
 
 module.exports = {
