@@ -5,13 +5,19 @@ const radarrApiKey = process.env.RADARR_API_KEY;
 
 const client = axios.create({
   baseURL: radarrHost,
-  headers: {
-    'X-Api-Key': radarrApiKey,
-  },
+});
+
+client.interceptors.request.use((config) => {
+  config.params = {
+    'apikey': radarrApiKey,
+    ...config.params,
+  };
+
+  return config;
 });
 
 async function getMovies () {
-  const { data } = await client.get('/api/movie');
+  const { data } = await client.get('/api/v3/movie');
 
   return data;
 }
