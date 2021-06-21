@@ -1,6 +1,6 @@
 {
   "name": "radarr-ombi-sync",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Remove available movies from your Radarr watch list.",
   "main": "index.js",
   "scripts": {
